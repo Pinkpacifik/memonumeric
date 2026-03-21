@@ -1,0 +1,43 @@
+
+HTML
+-----------------------------------------------
+<div class="zoomable-container">
+    <img src="./img/margaux.jpg"
+    alt="Bouteiile de vin"
+    class="zoomable-container__img">
+</div>
+
+CSS
+----------------------------------------------
+.zoomable-container {
+    overflow: hidden;
+    max-with: 500px;
+    margin: 0 auto;
+    height: 600px;
+}
+.zoomable-container__img {
+    with: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.zoomable-container__img:hover {
+    cursor: zoom-in;
+    scale: 2;
+}
+
+JS
+-----------------------------------------------
+const zoomableContainer = document.querySelector(".zoomable-container")
+const zoomableImg = document.querySelector(".zoomable-container__img")
+
+zoomableContainer.addEventListener("mousemove", imgZoom)
+
+function imgZoom(e){
+    const zoomableContainerInfo = zoomableContainer.getBoundingClientRect()
+    const x = e.clientX - zoomableContainerInfo.left
+    const y = e.clientY - zoomableContainerInfo.top
+    const percentXinContainer = (x / zoomableContainerInfo.width) * 100
+    const percentYinContainer = (x / zoomableContainerInfo.height) * 100
+    zoomableImg.style.transformOrigin = '${percentXinContainer}% ${percentYinContainer}%'
+}
+
