@@ -124,10 +124,14 @@ a:hover {
   cursor: pointer;
   font-family: "Oswald", sans-serif;
 }
+summary:hover {
+  color: var(--colorshadow);
+  background-color: var(--colorlink);
+}
 .faq p,
 .faq ul,
 .faq ol {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 /* FLEXBOX */
