@@ -38,6 +38,13 @@ body {
   height: 100vh;
   color: var(--colortxt);
 }
+
+footer {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .cadre {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -95,21 +102,6 @@ code {
   background-color: var(--colortxt);
   color: whitesmoke;
 }
-.faq span {
-  font-family: "Oswald", sans-serif;
-}
-.faq p {
-  margin-left: 50px;
-}
-article {
-  margin-bottom: 20px;
-}
-
-footer {
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
 button {
   margin: 10px;
   padding: 10px;
@@ -122,8 +114,31 @@ a:hover {
   color: var(--colorshadow);
   background-color: var(--colorlink);
 }
+
+/* SECTION en ACCORDEON (FAQ) */
+/* Sert à faire apparaître l'article au clic sur le sommaire */
+.container-summary {
+  margin-top: 10px;
+}
+.faq summary {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+}
+.faq p,
+.faq ul,
+.faq ol {
+  margin-left: 50px;
+}
+
 /* FLEXBOX */
 /* Sert a répartir équitablement des éléments sur la page */
+.flexbox {
+  display: flex;
+  justify-content: left;
+  padding-top: 5px;
+  gap: 10px;
+}
+
 .flexbox ul {
   padding: 0;
   display: flex;
@@ -139,10 +154,4 @@ a:hover {
   list-style: none;
   margin: 10px;
   font-family: "Oswald", sans-serif;
-}
-.flexbox section {
-  display: flex;
-  justify-content: left;
-  padding-top: 5px;
-  gap: 10px;
 }
