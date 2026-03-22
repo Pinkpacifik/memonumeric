@@ -63,7 +63,7 @@ main {
 }
 nav {
   min-width: 150px;
-  max-height: 500px;
+  height: 500px;
 }
 
 main li {
@@ -103,11 +103,15 @@ code {
   color: whitesmoke;
 }
 button {
-  margin: 10px;
+  max-width: 150px;
+  margin: 40px 0;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: var(--colorshadow);
+}
+button i {
+  font-size: 2rem;
 }
 button:hover,
 a:hover {
@@ -127,6 +131,7 @@ a:hover {
 summary:hover {
   color: var(--colorshadow);
   background-color: var(--colorlink);
+  border-radius: 5px;
 }
 .faq p,
 .faq ul,
