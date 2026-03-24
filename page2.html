@@ -1,137 +1,150 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Titre de la page (Ctrl + /)-->
-  <title>HEBERGEMENT</title>
-  <!-- Favicon de la page -->
-  <link rel="shortcut icon" href="./img/server-solid-full.svg" />
-  <!-- Lien avec la feuille de style -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- Link pour icones Fontawesome -->
-  <!-- Link pour icones Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page (Ctrl + /)-->
+    <title>Héberger son SITE</title>
+    <!-- Favicon de la page -->
+    <link rel="shortcut icon" href="./img/hebergt-logo.png" />
+    <!-- Lien avec la feuille de style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Link pour icones Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-  <div class="cadre">
-    <nav class="flexbox">
-      <ul>
-        <li>
-          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-        </li>
-        <li>
-          <a href="./page1.html"><i class="fa-solid fa-code"></i> Html-Css</a>
-        </li>
-        <li>
-          <a href="./page2.html"><i class="fa-solid fa-server"></i> Hébergt</a>
-        </li>
-        <li>
-          <a href="./page3.html"><i class="fa-brands fa-linux"></i> Linux</a>
-        </li>
-        <li>
-          <a href="./page4.html"><i class="fa-brands fa-firefox"></i> Firefox</a>
-        </li>
-        <li>
-          <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i> Applicat°</a>
-        </li>
-        <li>
-          <a href="./page6.html"><i class="fa-solid fa-box-archive"></i> Classt</a>
-        </li>
-      </ul>
+    <!-- Barre de NAVIGATION -->
+    <nav class="wrapper">
+        <div class="nav-bloc">
+            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page1.html"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page2.html"><i class="fa-solid fa-server"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page3.html"><i class="fa-brands fa-linux"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page4.html"><i class="fa-brands fa-firefox"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page6.html"><i class="fa-solid fa-box-archive"></i></a>
+        </div>
+
+        <div class="nav-brand">
+            <div class="brand">
+                <a href="mailto:pb@pro-etic.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <p class="tooltip">Contactez moi !</p>
+            </div>
+            <div class="brand">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <p class="tooltip">Rejoignez moi !</p>
+            </div>
+        </div>
     </nav>
-    <div class="blocpage">
-      <!-- Entête de la page -->
-      <header>
-        <h1><i class="fa-solid fa-server"></i> Héberger son site web</h1>
-      </header>
-      <!-- Corps de la page -->
-      <main>
-        <div>
-          <h2>Page Github</h2>
-          <hr />
-
-          <h3>Préparation préalable</h3>
-          <ol>
-            <li>Installer Git batch</li>
-            <li>
-              Créer un compte Github
-              <em>(le username sera utilisé dans l'adresse du site !)</em>
-            </li>
-            <li>Espace alloué pour héberger le site sur Github (1 Go)</li>
-          </ol>
-
-          <h3>Créer un projet</h3>
-          <ol>
-            <li>
-              Créer un Nouveau
-              <a href="./doc/New-repository.png" target="_blank">Repository</a>
-            </li>
-            <li>
-              Ouvrir le terminal dans VsCodium et taper les
-              <a href="./doc/command batch.png" target="_blank">command batch :</a>
-              <br />
-              <code>git init ; git add .</code> pour tout transférer. <br />
-              <code>git commit -m "first commit"; git branch -M main ; git remote
+    <!-- CORPS de la PAGE -->
+    <main>
+        <header>
+            <h1><i class="fa-solid fa-server"></i> Héberger son site web</h1>
+        </header>
+        <section class="container">
+            <article>
+                <h2>Page Github</h2>
+                <hr>
+                <details>
+                    <summary>
+                        Préparation préalable
+                    </summary>
+                    <ul>
+                        <li> Installer Git batch</li>
+                        <li> Créer un compte Github <em>(le username sera utilisé dans l'adresse du site !)</em></li>
+                        <li>Espace alloué pour héberger le site sur Github (1 Go)</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Créer un projet
+                    </summary>
+                    <ol>
+                        <li>
+                            Créer un Nouveau
+                            <a href="./doc/New-repository.png" target="_blank">Repository</a>
+                        </li>
+                        <li>
+                            Ouvrir le terminal dans VsCodium et taper les
+                            <a href="./doc/command batch.png" target="_blank">command batch :</a>
+                            <br />
+                            <code>git init ; git add .</code> pour tout transférer. <br />
+                            <code>git commit -m "first commit"; git branch -M main ; git remote
               add origin [URL de la page .git]</code> pour lier le dépot local et le
-              dépot distant. <br />
-              <code>git push -u origin main</code> pour envoyer les fichiers locaux sur
-              la branche distante
-            </li>
-            <li>
-              Créer un site à partir de la branche main : <br />
-              <code>Setting / Page [Select branch = main] / Save</code> --> Récupérer
-              l'adresse de la page.
-            </li>
-          </ol>
+                            dépot distant. <br />
+                            <code>git push -u origin main</code> pour envoyer les fichiers locaux sur
+                            la branche distante
+                        </li>
+                        <li>
+                            Créer un site à partir de la branche main : <br />
+                            <code>Setting / Page [Select branch = main] / Save</code> → Récupérer
+                            l'adresse de la page.
+                        </li>
+                    </ol>
+                </details>
+                <details>
+                    <summary>
+                        Enregistrer les modifications du projet
+                    </summary>
+                    Si des modifications sont apportées en local, pour mettre à jour le dépot distant :<br>
+                    <ul>
+                        <li>
+                            lancer la commande <code>git push</code> dans le CHANGE bash,
+                        </li>
+                        <li>
+                            Lancez <code>la synchronisation</code> pour effectuer les mises à jour nécessaires.
+                        </li>
+                    </ul>
+                </details>
+            </article>
 
-          <h3>Enregistrer les modifications du projet</h3>
-          <p>
-            Si des modifications sont apportées en local, lancer la commande :
-          </p>
-          <p><code>git push</code> dans le CHANGE bash, pour mettre à jour le dépot distant.</p>
-          <p>Lancez <code>la synchronisation</code> pour effectuer les mises à jour nécessaires.</p>
-        </div>
+            <article>
+                <h2>Domaine Page starter</h2>
+                <hr />
+                <details>
+                    <summary class="flex">
+                        <img src="./img/gear.png" height="30px" alt="" />Relever les paramètres du domaine
+                    </summary>
+                    <ul>
+                        <li>Espace alloué pour héberger le site sur Infomaniak <em>(10 Mo)</em>
+                        </li>
+                        <li>
+                            Espace alloué pour héberger le site sur PagePerso FREE <em>(??)</em>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary class="flex">
+                        <img src="./img/Filezilla.png" height="30px" alt="" /> Transférer les fichiers avec
+                        Filezilla
+                    </summary>
+                    <ol>
+                        <li>Paramétrage du transfert</li>
+                    </ol>
+                </details>
+            </article>
 
-        <div>
-          <h2>Domaine Page starter</h2>
-          <hr />
+        </section>
 
-          <div class="flexbox">
-            <section>
-              <img src="./img/gear.png" height="30px" alt="logo parametres" />
-              <h3>Relever les paramètres du domaine</h3>
-            </section>
-          </div>
-          <ul>
-            <li>
-              Espace alloué pour héberger le site sur Infomaniak
-              <em>(10 Mo)</em>
-            </li>
-            <li>
-              Espace alloué pour héberger le site sur PagePerso FREE
-              <em>(??)</em>
-            </li>
-          </ul>
-
-          <div class="flexbox">
-            <section>
-              <img src="./img/Filezilla.png" height="30px" alt="logo filezilla" />
-              <h3>Transférer les fichiers avec Filezilla</h3>
-            </section>
-          </div>
-
-          <ol>
-            <li>Paramétrage du transfert</li>
-          </ol>
-        </div>
-      </main>
-    </div>
-  </div>
+    </main>
 </body>
 
 </html>

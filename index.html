@@ -1,163 +1,131 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titre de la page (Ctrl + /)-->
     <title>Acceuil MemoNumeric</title>
     <!-- Favicon de la page -->
-    <link rel="shortcut icon" href="./img/house-solid-full.svg" />
+    <link rel="shortcut icon" href="./img/memonumeric-icon.png" />
     <!-- Lien avec la feuille de style -->
     <link rel="stylesheet" href="./style.css" />
 
     <!-- Link pour icones Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <div class="cadre">
-      <section class="menu">
-        <nav class="flexbox">
-          <ul>
-            <li>
-              <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li>
-              <a href="./page1.html"
-                ><i class="fa-solid fa-code"></i> Html-Css</a
-              >
-            </li>
-            <li>
-              <a href="./page2.html"
-                ><i class="fa-solid fa-server"></i> Hébergt</a
-              >
-            </li>
-            <li>
-              <a href="./page3.html"
-                ><i class="fa-brands fa-linux"></i> Linux</a
-              >
-            </li>
-            <li>
-              <a href="./page4.html"
-                ><i class="fa-brands fa-firefox"></i> Firefox</a
-              >
-            </li>
-            <li>
-              <a href="./page5.html"
-                ><i class="fa-solid fa-bag-shopping"></i> Applicat°</a
-              >
-            </li>
-            <li>
-              <a href="./page6.html"
-                ><i class="fa-solid fa-box-archive"></i> Classt</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- Pieds de page -->
-        <button>
-          <a href="mailto:pb@pro-etic.fr"
-            ><i class="fa-regular fa-envelope"></i> Contactez moi !</a
-          >
-        </button>
-      </section>
+</head>
 
-      <div class="blocpage">
-        <!-- Entête de la page -->
+<body>
+    <!-- Barre de NAVIGATION -->
+    <nav class="wrapper">
+        <div class="nav-bloc">
+            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page1.html"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page2.html"><i class="fa-solid fa-server"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page3.html"><i class="fa-brands fa-linux"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page4.html"><i class="fa-brands fa-firefox"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page6.html"><i class="fa-solid fa-box-archive"></i></a>
+        </div>
+
+        <div class="nav-brand">
+            <div class="brand">
+                <a href="mailto:pb@pro-etic.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <p class="tooltip">Contactez moi !</p>
+            </div>
+            <div class="brand">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <p class="tooltip">Rejoignez moi !</p>
+            </div>
+        </div>
+    </nav>
+    <!-- CORPS de la PAGE -->
+    <main>
         <header>
-          <h1><i class="fa-solid fa-house"></i> Menu général</h1>
+            <h1><i class="fa-solid fa-house"></i> Menu général</h1>
         </header>
-        <!-- Corps de la page -->
-        <main>
-          <div>
-            <section class="flexbox">
-              <img src="./img/HTML-CSS.png" height="50px" alt="logo Html Css" />
-              <h2>Bien démarrer en HTML-CSS</h2>
-            </section>
-            <p>
-              Dans cette section vous trouverez tous les conseils et les liens
-              utiles pour commencer à coder un site en HTML CSS, avec l'éditeur
-              VsCodium.
-            </p>
-            <br />
 
-            <section class="flexbox">
-              <img
-                src="./img/hebergt-logo.png"
-                height="50px"
-                alt="logo hebergement"
-              />
-              <h2>Héberger son site</h2>
-            </section>
-            <p>
-              Dans cette section vous apprendrez à utiliser Github pour héberger
-              votre site web.
-            </p>
-            <br />
+        <section class="container">
+            <article>
+                <div class="flex">
+                    <img src="./img/HTML-CSS.png" width="50px" alt="">
+                    <h2>Bien démarrer en HTML-CSS</h2>
+                </div>
+                <hr>
+                Dans cette section vous trouverez tous les conseils et les liens
+                utiles pour commencer à coder un site en HTML CSS, avec l'éditeur
+                VsCodium.
+            </article>
 
-            <section class="flexbox">
-              <img src="./img/linux-logo.png" height="50px" alt="logo linux" />
-              <h2>Installation de LINUX</h2>
-            </section>
-            <p>
-              Dans cette section vous serez guidé pas à pas pour installer Linux
-              sur votre ordinateur.
-            </p>
-            <br />
+            <article>
+                <div class="flex">
+                    <img src="./img/hebergt-logo.png" width="50px" alt="">
+                    <h2>Héberger son site</h2>
+                </div>
+                <hr>
+                Dans cette section vous apprendrez à utiliser Github pour héberger
+                votre site web.
+            </article>
 
-            <section class="flexbox">
-              <img
-                src="./img/firefox-logo.png"
-                height="50px"
-                alt="logo firefox"
-              />
-              <h2>Paramétrage du navigateur FIREFOX</h2>
-            </section>
-            <p>
-              Dans cette section vous apprendrez à personnaliser et optimiser
-              Firefox, en utilisant la synchronisation de compte et en
-              paramétrant les options de sécurité.
-            </p>
-            <br />
+            <article>
+                <div class="flex">
+                    <img src="./img/linux.png" width="50px" alt="">
+                    <h2>Installation de LINUX</h2>
+                </div>
+                <hr>
+                Dans cette section vous serez guidé pas à pas pour installer Linux
+                sur votre ordinateur.
+            </article>
 
-            <section class="flexbox">
-              <img
-                src="./img/handbag.png"
-                height="50px"
-                alt="logo applications"
-              />
-              <h2>APPLICATIONS et Solutions multiplateformes</h2>
-            </section>
-            <p>
-              Dans cette section vous aurez un aperçu des meilleures
-              applications pour traiter toute vos activités de création et de
-              communication sur ordinateur ou tablette IOS Androïd.
-            </p>
-            <br />
+            <article>
+                <div class="flex">
+                    <img src="./img/firefox.png" width="50px" alt="">
+                    <h2>Paramétrage du navigateur FIREFOX</h2>
+                </div>
+                <hr>
+                Dans cette section vous apprendrez à personnaliser et optimiser
+                Firefox, en utilisant la synchronisation de compte et en
+                paramétrant les options de sécurité.
+            </article>
 
-            <section class="flexbox">
-              <img
-                src="./img/card_file_box.png"
-                height="50px"
-                alt="logo classeur"
-              />
-              <h2>Système de CLASSEMENT</h2>
-            </section>
-            <p>
-              Dans cette section vous trouverez tous les modèles de classement
-              pour ranger vos documents papier, vos fichiers numériques, vos
-              contacts etc...
-            </p>
-            <br />
-          </div>
-        </main>
-      </div>
-    </div>
-  </body>
+            <article>
+                <div class="flex">
+                    <img src="./img/handbag.png" width="50px" alt="">
+                    <h2>Applications et Solutions multiplateformes</h2>
+                </div>
+                <hr>
+                Dans cette section vous aurez un aperçu des meilleures
+                applications pour traiter toute vos activités de création et de
+                communication sur ordinateur ou tablette IOS Androïd.
+            </article>
+
+            <article>
+                <div class="flex">
+                    <img src="./img/card_file_box.png" width="50px" alt="">
+                    <h2>Système de Classement</h2>
+                </div>
+                <hr>
+                Dans cette section vous trouverez tous les modèles de classement
+                pour ranger vos documents papier, vos fichiers numériques, vos
+                contacts etc...
+            </article>
+        </section>
+    </main>
+</body>
+
 </html>

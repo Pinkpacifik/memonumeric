@@ -1,178 +1,153 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titre de la page (Ctrl + /)-->
     <title>Système de CLASSEMENT</title>
     <!-- Favicon de la page -->
-    <link rel="shortcut icon" href="./img/box-archive-solid-full.svg" />
+    <link rel="shortcut icon" href="./img/card_file_box.png" />
     <!-- Lien avec la feuille de style -->
     <link rel="stylesheet" href="./style.css" />
-    <!-- Link pour icones Fontawesome -->
-    <!-- Link pour icones Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <div class="cadre">
-      <nav class="flexbox">
-        <ul>
-          <li>
+    <!-- Link pour icones Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Barre de NAVIGATION -->
+    <nav class="wrapper">
+        <div class="nav-bloc">
             <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-          </li>
-          <li>
-            <a href="./page1.html"><i class="fa-solid fa-code"></i> Html-Css</a>
-          </li>
-          <li>
-            <a href="./page2.html"
-              ><i class="fa-solid fa-server"></i> Hébergt</a
-            >
-          </li>
-          <li>
-            <a href="./page3.html"><i class="fa-brands fa-linux"></i> Linux</a>
-          </li>
-          <li>
-            <a href="./page4.html"
-              ><i class="fa-brands fa-firefox"></i> Firefox</a
-            >
-          </li>
-          <li>
-            <a href="./page5.html"
-              ><i class="fa-solid fa-bag-shopping"></i> Applicat°</a
-            >
-          </li>
-          <li>
-            <a href="./page6.html"
-              ><i class="fa-solid fa-box-archive"></i> Classt</a
-            >
-          </li>
-        </ul>
-      </nav>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page1.html"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page2.html"><i class="fa-solid fa-server"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page3.html"><i class="fa-brands fa-linux"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page4.html"><i class="fa-brands fa-firefox"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page6.html"><i class="fa-solid fa-box-archive"></i></a>
+        </div>
 
-      <div class="blocpage">
-        <!-- Entête de la page -->
+        <div class="nav-brand">
+            <div class="brand">
+                <a href="mailto:pb@pro-etic.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <p class="tooltip">Contactez moi !</p>
+            </div>
+            <div class="brand">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <p class="tooltip">Rejoignez moi !</p>
+            </div>
+        </div>
+    </nav>
+    <!-- CORPS de la PAGE -->
+    <main>
         <header>
-          <h1><i class="fa-solid fa-box-archive"></i> Système de classement</h1>
+            <h1>
+                <i class="fa-solid fa-box-archive"></i> Système de classement
+            </h1>
         </header>
-        <!-- Corps de la page -->
-        <main>
-          <h2>Mon CLASSEUR</h2>
-
-          <div class="container-summary">
-            <section class="flexbox">
-              <img
-                src="./img/card_file_box.png"
-                height="30px"
-                alt="logo classeur"
-              />
-              <h3>Archives PAPIER</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>
-                  (Les rubriques pour archiver les documents papier)
-                </summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img src="./doc/archives-papier.png" alt="" width="900px" />
-              </details>
+        <section class="container">
+            <article>
+                <div class="flex">
+                    <img src="./img/card_file_box.png" height="40px" alt="logo classeur" />
+                    <h2>Archives PAPIER</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>
+                        Les rubriques pour archiver les documents papier
+                    </summary>
+                    <img src="./doc/archives-papier.png" alt="" width="900px" />
+                </details>
             </article>
-          </div>
 
-          <div class="container-summary">
-            <section class="flexbox">
-              <img src="./img/KDrive.png" height="30px" alt="logo KDrive" />
-              <h3>Espace CLOUD</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>
-                  (Les rubriques pour classer les documents numériques)
-                </summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img src="./doc/classeur-cloud.png" alt="" width="900px" />
-              </details>
+            <article>
+                <div class="flex">
+                    <img src="./img/KDrive.png" height="40px" alt="logo KDrive" />
+                    <h2>Espace CLOUD</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>
+                        Les rubriques pour classer les documents numériques
+                    </summary>
+                    <img src="./doc/classeur-cloud.png" alt="" width="900px" />
+                </details>
             </article>
-          </div>
 
-          <div class="container-summary">
-            <section class="flexbox">
-              <img src="./img/email-logo.png" height="30px" alt="logo email" />
-              <h3>Affectation du COURRIER</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>
-                  (Utilisation des adresses eMAIL et classt du courrier dans
-                  l'adresse PRINCIPALE)
-                </summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img
-                  src="./doc/affectation-courriers.png"
-                  alt=""
-                  width="900px"
-                />
-              </details>
+            <article>
+                <div class="flex">
+                    <img src="./img/email-logo.png" height="40px" alt="logo email" />
+                    <h2>Affectation du COURRIER</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>
+                        Utilisation des adresses eMAIL et classt du courrier dans
+                        l'adresse PRINCIPALE
+                    </summary>
+                    <!-- Affichage des images jpg (taille optimale : 900x600) -->
+                    <img src="./doc/affectation-courriers.png" alt="" width="900px" />
+                </details>
             </article>
-          </div>
 
-          <div class="container-summary">
-            <section class="flexbox">
-              <img src="./img/Kcontact.png" height="30px" alt="logo contacts" />
-              <h3>Rubriques des CONTACTS</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>
-                  (Les rubriques pour classer les contacts du répertoire)
-                </summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img src="./doc/rubriques-contact.png" alt="" width="900px" />
-              </details>
+            <article>
+                <div class="flex">
+                    <img src="./img/Kcontact.png" height="40px" alt="logo contacts" />
+                    <h2>Rubriques des CONTACTS</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>
+                        Les rubriques pour classer les contacts du répertoire
+                    </summary>
+                    <img src="./doc/rubriques-contact.png" alt="" width="900px" />
+                </details>
             </article>
-          </div>
 
-          <div class="container-summary">
-            <section class="flexbox">
-              <img
-                src="./img/bitwarden_logo.webp"
-                height="30px"
-                alt="logo coffre"
-              />
-              <h3>Dossiers du COFFRE pour les ESPACES PERSO (id - mdp)</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>
-                  (Les rubriques pour classer les identifiants du coffre)
-                </summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img src="" alt="à faire" width="900px" />
-              </details>
+            <article>
+                <div class="flex">
+                    <img src="./img/bitwarden.webp" height="40px" alt="logo coffre" />
+                    <h2>Dossiers du COFFRE pour les ESPACES PERSO (id - mdp)</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>
+                        Les rubriques pour classer les identifiants du coffre
+                    </summary>
+                    <img src="" alt="à faire" width="900px" />
+                </details>
             </article>
-          </div>
 
-          <div class="container-summary">
-            <section class="flexbox">
-              <img src="./img/simplenote.png" height="30px" alt="logo notes" />
-              <h3>Classement des NOTES</h3>
-            </section>
-            <article class="faq">
-              <details>
-                <summary>(Les tag pour trier les notes)</summary>
-                <!-- Affichage des images jpg (taille optimale : 900x600) -->
-                <img src="" alt="à faire" width="900px" />
-              </details>
+            <article>
+                <div class="flex">
+                    <img src="./img/simplenote.png" height="40px" alt="logo notes" />
+                    <h2>Classement des NOTES</h2>
+                </div>
+                <hr>
+                <details>
+                    <summary>Les tag pour trier les notes</summary>
+                    <img src="" alt="à faire" width="900px" />
+                </details>
             </article>
-          </div>
-        </main>
-      </div>
-    </div>
-  </body>
+
+        </section>
+    </main>
+</body>
+
 </html>

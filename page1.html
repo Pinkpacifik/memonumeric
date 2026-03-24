@@ -1,249 +1,235 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Titre de la page (Ctrl + /)-->
-  <title>HTML CSS</title>
-  <!-- Favicon de la page -->
-  <link rel="shortcut icon" href="./img/code-solid-full.svg" />
-  <!-- Lien avec la feuille de style -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- Link pour icones Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page (Ctrl + /)-->
+    <title>Bien démarrer en HTML-CSS</title>
+    <!-- Favicon de la page -->
+    <link rel="shortcut icon" href="./img/codage.png" />
+    <!-- Lien avec la feuille de style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Link pour icones Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-  <div class="cadre">
-    <nav class="flexbox">
-      <ul>
-        <li>
-          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-        </li>
-        <li>
-          <a href="./page1.html"><i class="fa-solid fa-code"></i> Html-Css</a>
-        </li>
-        <li>
-          <a href="./page2.html"><i class="fa-solid fa-server"></i> Hébergt</a>
-        </li>
-        <li>
-          <a href="./page3.html"><i class="fa-brands fa-linux"></i> Linux</a>
-        </li>
-        <li>
-          <a href="./page4.html"><i class="fa-brands fa-firefox"></i> Firefox</a>
-        </li>
-        <li>
-          <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i> Applicat°</a>
-        </li>
-        <li>
-          <a href="./page6.html"><i class="fa-solid fa-box-archive"></i> Classt</a>
-        </li>
-      </ul>
+    <!-- Barre de NAVIGATION -->
+    <nav class="wrapper">
+        <div class="nav-bloc">
+            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page1.html"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page2.html"><i class="fa-solid fa-server"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page3.html"><i class="fa-brands fa-linux"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page4.html"><i class="fa-brands fa-firefox"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page5.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <div class="nav-bloc">
+            <a href="./page6.html"><i class="fa-solid fa-box-archive"></i></a>
+        </div>
+
+        <div class="nav-brand">
+            <div class="brand">
+                <a href="mailto:pb@pro-etic.fr" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <p class="tooltip">Contactez moi !</p>
+            </div>
+            <div class="brand">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <p class="tooltip">Rejoignez moi !</p>
+            </div>
+        </div>
     </nav>
-    <div class="blocpage">
-      <!-- Entête de la page -->
-      <header>
-        <h1><i class="fa-solid fa-code"></i> Bien démarrer en HTML-CSS</h1>
-      </header>
-      <!-- Corps de la page -->
-      <main>
-        <div class="container-summary">
-          <h2>Paramétrage VsCodium</h2>
-          <hr />
-          <article class="faq">
-            <details>
-              <summary class="flexbox">
-                <img src="./img/plugin-logo.png" width="30px" alt="logo plugin" />
-                <span>Installer les plugins</span>
-              </summary>
-              <ol>
-                <li>
-                  Live Server <em>(Affichage du document dans le navigateur)</em>
-                </li>
-                <li>
-                  Prettier Code formatter
-                  <em>(Indentation auto des balises HTML)</em>
-                </li>
-                <li>
-                  Material Icon Theme
-                  <em>(place une icone devant les noms de fichier
-                    HTML-CSS-JS...)</em>
-                </li>
-              </ol>
-            </details>
-          </article>
-          <article class="faq">
-            <details>
-              <summary class="flexbox">
-                <img src="./img/setting-logo.png" width="30px" alt="logo setting" />
-                <span>Manage - setting</span>
-              </summary>
-              <ul>
-                <li>
-                  Autosave - onWindowChange
-                  <em>(Sauvegarde auto au changt de fenètre)</em>
-                </li>
-                <li>
-                  Format on save - yes <em>(Indentation auto à la sauvegarde)</em>
-                </li>
-                <li>WordWrap - on <em>(Retour à la ligne auto)</em></li>
-              </ul>
-            </details>
-          </article>
-        </div>
+    <!-- CORPS de la PAGE -->
+    <main>
+        <header>
+            <h1><i class="fa-solid fa-code"></i> Bien démarrer en HTML-CSS</h1>
+        </header>
+        <section class="container">
+            <article>
+                <h2>Paramétrage VsCodium</h2>
+                <hr>
+                <details>
+                    <summary class="flex">
+                        <img src="./img/plugin-logo.png" width="30px" alt="" />Installer les plugins
+                    </summary>
+                    <ol>
+                        <li> Live Server → <em>(Affichage du document dans le navigateur)</em></li>
+                        <li> Material Icon Theme → <em>(place une icone devant les noms de fichier
+                                HTML-CSS-JS...)</em></li>
+                        <li>Prettier code formater → <em>(Formate le document après sauvegarde)</em></li>
+                    </ol>
+                </details>
+                <details>
+                    <summary class="flex">
+                        <img src="./img/setting-logo.png" width="30px" alt="" />Manage - setting
+                    </summary>
+                    <ul>
+                        <li> Autosave - onWindowChange → <em>(Sauvegarde auto au changt de fenètre)</em></li>
+                        <li> Format on save - yes → <em>(Formatage auto à la sauvegarde)</em></li>
+                        <li>WordWrap - on → <em>(Retour à la ligne auto quand l'écran est réduit)</em></li>
+                    </ul>
+                </details>
+            </article>
 
-        <div class="container-summary">
-          <h2>Construire le fichier HTML</h2>
-          <hr />
-          <article class="faq">
-            <details>
-              <summary>
-                Attributs de texte, raccourcis VsCodium
-              </summary>
-              <ul>
-                <li><code>&#60;b&#62;</code><b>Texte en gras</b>
-                  <code>&#60;/b&#62;</code>
-                </li>
-                <li><code>&#60;em&#62;</code><b>Texte en italique</b>
-                  <code>&#60;/em&#62;</code>
-                </li>
-                <br>
-                <li><code>!</code> <em>Structure de base du doc HTML</em></li>
-                <li>
-                  <code>Ctrl <b>+ /</b></code>
-                  <em>Transforme le texte en commentaire</em>
-                </li>
-                <li>
-                  <code>lorem20</code> : Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Animi, rerum repudiandae beatae culpa quia
-                  error aliquam? Necessitatibus saepe laborum eveniet!
-                </li>
-              </ul>
-            </details>
-          </article>
-          <article class="faq">
-            <details>
-              <summary>
-                Liens utiles pour les emojis, icônes, images, videos, audio
-              </summary>
-              <ul>
-                <li>
-                  &#128521; Liste des <a href="https://html-css-js.com/html/character-codes/icons/"
-                    target="_blank">émojis</a> avec leur code UTF8
-                </li>
-                <li>
-                  <i class="fa-solid fa-link"></i> Liste de
-                  <a href="https://html-css-js.com/html/links/" target="_blank">Liens utiles</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i> Utiliser des icônes
-                  <a href="https://fontawesome.com/search" target="_blank">Fontawesome</a>
-                  --> sur le site <a href="https://cdnjs.com/libraries/font-awesome" target="_blank">cdnjs</a> vous
-                  trouverez le lien à copier dans le &#60;head&#62;
-                </li>
-                <li>
-                  <i class="fa-solid fa-clapperboard"></i> Images et Vidéos libres de droit :
-                  <a href="https://pixabay.com/videos/" target="_blank">PixaBay</a>
-                  -->
-                  <code>&#60;video src="./img/vagues.mp4" height="200" autoplay muted loop&#62;&#60;/video&#62;</code>
-                </li>
-                <li>
-                  <i class="fa-brands fa-itunes-note"></i></i> Ajouter de l'audio :
-                  <a href="https://pixabay.com/sound-effects/" target="_blank">Effets sonores</a>
-                  --> <code>&#60;audio controls src="./audio/ocean-waves.mp3"&#62;&#60;/audio&#62;</code>
-                </li>
-              </ul>
-            </details>
-          </article>
-        </div>
+            <article>
+                <h2>Construire le fichier HTML</h2>
+                <hr />
+                <details>
+                    <summary>
+                        Attributs de texte, raccourcis VsCodium
+                    </summary>
+                    <ul>
+                        <li><code>&#60;b&#62;</code><b>Texte en gras</b>
+                            <code>&#60;/b&#62;</code>
+                        </li>
+                        <li><code>&#60;em&#62;</code><b>Texte en italique</b>
+                            <code>&#60;/em&#62;</code>
+                        </li>
+                        <br>
+                        <li><code>!</code> <em>Structure de base du doc HTML</em></li>
+                        <li>
+                            <code>Ctrl <b>+ /</b></code>
+                            <em>Transforme le texte en commentaire</em>
+                        </li>
+                        <li>
+                            <code>lorem20</code> : Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Animi, rerum repudiandae beatae culpa quia
+                            error aliquam? Necessitatibus saepe laborum eveniet!
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Liens utiles pour les emojis, icônes, images, videos, audio
+                    </summary>
+                    <ul>
+                        <li>
+                            &#128521; Liste des <a href="https://html-css-js.com/html/character-codes/icons/"
+                                target="_blank">émojis</a> avec leur code UTF8
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-link"></i> Liste de
+                            <a href="https://html-css-js.com/html/links/" target="_blank">Liens utiles</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> Utiliser des icônes
+                            <a href="https://fontawesome.com/search" target="_blank">Fontawesome</a>
+                            --> sur le site <a href="https://cdnjs.com/libraries/font-awesome" target="_blank">cdnjs</a>
+                            vous
+                            trouverez le lien à copier dans le &#60;head&#62;
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clapperboard"></i> Images et Vidéos libres de droit :
+                            <a href="https://pixabay.com/videos/" target="_blank">PixaBay</a>
+                            -->
+                            <code>&#60;video src="./img/vagues.mp4" height="200" autoplay muted loop&#62;&#60;/video&#62;</code>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-itunes-note"></i></i> Ajouter de l'audio :
+                            <a href="https://pixabay.com/sound-effects/" target="_blank">Effets sonores</a>
+                            --> <code>&#60;audio controls src="./audio/ocean-waves.mp3"&#62;&#60;/audio&#62;</code>
+                        </li>
+                    </ul>
+                </details>
+            </article>
 
-        <div class="container-summary">
-          <h2>Construire le fichier CSS</h2>
-          <hr />
-          <article class="faq">
-            <details>
-              <summary>
-                Polices, Background, Couleurs
-              </summary>
-              <ul>
-                <li>
-                  Utiliser ou Télécharger des Polices spéciales :
-                  <a href="https://fonts.google.com/" target="_blank">FontGoogle</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-photo-film"></i> Choisir un fond d'écran ou une texture :
-                  <a href="https://pixabay.com/fr" target="_blank">Pixabay</a>
-                  - <a href="https://unsplash.com/fr" target="_blank">Unsplash</a> -
-                  - <a href="https://www.pexels.com/fr-fr/" target="_blank">pexels</a> -
-                  Websites for <a href="https://wweb.dev/resources/creative-backgrounds" target="_blank">Creative
-                    Backgrounds</a>
-                  --> <code>{background: url(./img/text-mur-ciment-raye.jpg) center/cover}</code>
-                </li>
-                <li>
-                  Choisir une palette de couleur, en harmonie avec l'image de
-                  fond :
-                  <a href="https://coolors.co/image-picker" target="_blank">Image picker</a>
-                </li>
-                <li>
-                  Choisir un dégradé de couleurs et générer son code CSS :
-                  <a href="https://cssgradient.io/" target="_blank">CSS Gradient</a>
-                  - <a href="https://uigradients.com/" target="_blank">uiGradients</a>
-                </li>
-                <li>
-                  <a href="https://html-css-js.com/css/generator/text-shadow/" target="_blank">Générateur d'effets</a> sur le texte et les bordures
-                </li>
-              </ul>
-            </details>
-          </article>
+            <article>
+                <h2>Construire le fichier CSS</h2>
+                <hr />
+                <details>
+                    <summary>
+                        Polices, Background, Couleurs
+                    </summary>
+                    <ul>
+                        <li>
+                            Utiliser ou Télécharger des Polices spéciales :
+                            <a href="https://fonts.google.com/" target="_blank">FontGoogle</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-photo-film"></i> Choisir un fond d'écran ou une texture :
+                            <a href="https://pixabay.com/fr" target="_blank">Pixabay</a>
+                            - <a href="https://unsplash.com/fr" target="_blank">Unsplash</a> -
+                            - <a href="https://www.pexels.com/fr-fr/" target="_blank">pexels</a> -
+                            Websites for <a href="https://wweb.dev/resources/creative-backgrounds"
+                                target="_blank">Creative
+                                Backgrounds</a>
+                            --> <code>{background: url(./img/text-mur-ciment-raye.jpg) center/cover}</code>
+                        </li>
+                        <li>
+                            Choisir une palette de couleur, en harmonie avec l'image de
+                            fond :
+                            <a href="https://coolors.co/image-picker" target="_blank">Image picker</a>
+                        </li>
+                        <li>
+                            Choisir un dégradé de couleurs et générer son code CSS :
+                            <a href="https://cssgradient.io/" target="_blank">CSS Gradient</a>
+                            - <a href="https://uigradients.com/" target="_blank">uiGradients</a>
+                        </li>
+                        <li>
+                            <a href="https://html-css-js.com/css/generator/text-shadow/" target="_blank">Générateur
+                                d'effets</a>
+                            sur le texte et les bordures
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Disposition des blocs - les générateurs
+                    </summary>
+                    <ul>
+                        <li>
+                            Genérer le code CSS pour vos flexbox
+                            <a href="https://angrytools.com/css-flex/" target="_blank">CSS Flex layout</a>
+                        </li>
+                        <li>
+                            Genérer le code CSS pour vos grilles
+                            <a href="https://angrytools.com/css-grid/" target="_blank">CSS Grid Layout Generator</a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Exemples de composants
+                    </summary>
+                    <ul>
+                        <li>
+                            Réalisation d'un
+                            <a href="https://codepen.io/Pinkpacific/pen/oNVqGor?editors=1100" target="_blank">Cadre
+                                flottant</a>
+                            HTML/CSS
+                        </li>
+                        <li>
+                            Réalisation de
+                            <a href="https://codepen.io/Pinkpacific/pen/raMGeJX?editors=1100" target="_blank">Flip card
+                                3D</a>
+                            HTML/CSS
+                        </li>
+                        <li>
+                            Réalisation d'un
+                            <a href="https://codepen.io/Pinkpacific/pen/QwKqNxJ" target="_blank">calendrier </a>
+                            HTML/CSS/JS
+                        </li>
+                    </ul>
+                </details>
+            </article>
+        </section>
 
-          <article class="faq">
-            <details>
-              <summary>
-                Disposition des blocs - les générateurs
-              </summary>
-              <ul>
-                <li>
-                  Genérer le code CSS pour vos flexbox
-                  <a href="https://angrytools.com/css-flex/" target="_blank">CSS Flex layout</a>
-                </li>
-                <li>
-                  Genérer le code CSS pour vos grilles
-                  <a href="https://angrytools.com/css-grid/" target="_blank">CSS Grid Layout Generator</a>
-                </li>
-              </ul>
-            </details>
-          </article>
-
-          <article class="faq">
-            <details>
-              <summary>
-                Exemples de composants
-              </summary>
-              <ul>
-                <li>
-                  Réalisation d'un
-                  <a href="https://codepen.io/Pinkpacific/pen/oNVqGor?editors=1100" target="_blank">Cadre flottant</a> HTML/CSS
-                </li>
-                <li>
-                  Réalisation de
-                  <a href="https://codepen.io/Pinkpacific/pen/raMGeJX?editors=1100" target="_blank">Flip card 3D</a> HTML/CSS
-                </li>
-                <li>
-                  Réalisation d'un
-                  <a href="https://codepen.io/Pinkpacific/pen/QwKqNxJ" target="_blank">calendrier </a> HTML/CSS/JS
-                </li>
-              </ul>
-            </details>
-          </article>
-
-        </div>
-
-      </main>
-    </div>
-  </div>
+    </main>
 </body>
 
 </html>

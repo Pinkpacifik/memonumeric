@@ -1,94 +1,197 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
-@font-face {
-  font-family: "DMSerif";
-  src: url(./fonts/DMSerifDisplay-Regular.ttf);
-  font-family: "Cormorant Garamond";
-  src: url(./fonts/CormorantGaramond-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rosario:ital,wght@0,300..700;1,300..700&family=Ysabeau+SC:wght@1..1000&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 :root {
+  --font-titre: "Ysabeau SC", sans-serif;
+  --font-sstitre: "Ysabeau", sans-serif;
+  --font-defaut: "Rosario", sans-serif;
+  --font-txt: "Cormorant", serif;
+  --font-mono: "Roboto Mono", monospace;
   --colortxt: #313131;
-  --colortitle: #e2861c;
+  --colortitre: #e2861c;
   --colorlink: #251c0f;
   --colorborder: #ffd900;
   --colorshadow: #cfab81;
   --colorback: rgba(22, 21, 20, 0.644);
-  --linear-grad: (
-    90deg,
-    rgba(51, 47, 87, 1) 0%,
-    rgba(110, 99, 157, 1) 50%,
-    rgba(190, 144, 184, 1) 100%
-  );
+  --linear-grad: (90deg,
+      rgba(51, 47, 87, 1) 0%,
+      rgba(110, 99, 157, 1) 50%,
+      rgba(190, 144, 184, 1) 100%);
+  --text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15), 2px 2px 2px rgba(206, 140, 51, 0);
 }
 
-/* L'étoile donne du style à TOUS les éléments */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 1. Classes UNIFIEES **************************/
 body {
-  font-family: "Cormorant Garamond", serif;
-  /* Les tailles de polices doivent être en REM */
-  font-size: 1.2rem;
-  background: url(./img/pellissier-wall.jpg) center/cover;
-  /* VH = 100% de la taille de l'écran (viewport height) */
   height: 100vh;
-  color: var(--colortxt);
+  font-family: var(--font-defaut);
+  font-size: 1.2rem;
+  background-image: url(./img/pellissier-wall.jpg);
 }
 
-footer {
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.cadre {
-  display: grid;
-  grid-template-columns: 10% 90%;
-}
-
-main {
-  min-height: 500px;
-  width: 95%;
-  backdrop-filter: blur(5px);
-  border: 2px solid var(--colorborder);
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0px 0px 20px 4px var(--colorshadow);
-  padding: 15px;
-  /* Centrer une boite */
-  margin: 0 auto;
-}
-nav {
-  min-width: 150px;
-  height: 500px;
-}
-
-main li {
-  margin-left: 20px;
-}
-main hr {
-  color: var(--colorborder);
-}
-
+/* Titres et paragraphe ******************/
 h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2.5rem;
   text-align: center;
-  color: var(--colortitle);
-  font-family: "Oswald", sans-serif;
+  text-shadow: var(--text-shadow);
+  color: var(--colortitre);
+  font-family: var(--font-titre);
+  font-size: 2.5rem;
 }
 
-h2,
-h3 {
-  /* text-align: center; */
+h2 {
   color: var(--colortxt);
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titre);
+  font-size: 2rem;
 }
-a {
+
+h3 {
+  color: var(--colortxt);
+  font-family: var(--font-sstitre);
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: var(--font-txt);
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+li {
+  margin-left: 40px;
+}
+
+hr {
+  color: var(--colorborder);
+}
+
+code {
+  font-size: 1rem;
+  background-color: var(--colortxt);
+  color: #aaa;
+}
+
+/* 1. Barre de NAVIGATION 
+*******************************/
+nav {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* z-index: 2; */
+}
+
+.wrapper {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #2c2c2c;
+}
+
+.nav-bloc {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bloc i {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+.nav-bloc i:hover {
+  color: var(--colorshadow);
+  scale: 1.2;
+}
+
+.nav-brand {
+  position: absolute;
+  bottom: 30px;
+}
+
+.nav-brand {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+}
+
+.nav-brand i {
+  color: #e2861c;
+  font-size: 1.5rem;
+}
+
+.tooltip {
+  position: absolute;
+  background: #2c2c2c;
+  border-radius: 10px;
+  color: antiquewhite;
+  font-size: 12px;
+  width: 60px;
+  text-align: left;
+  translate: 40px;
+  transform: translateY(-30px);
+  pointer-events: none;
+  display: none;
+}
+
+.brand:hover .tooltip {
+  display: block;
+}
+
+/* 2. Contenu de la PAGE 
+*******************************/
+
+header {
+  padding: 20px;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  backdrop-filter: blur(5px);
+  padding: 0px 30px;
+
+}
+
+article {
+  padding-bottom: 15px;
+  width: 90%;
+}
+
+details {
+  padding-top: 8px;
+}
+
+summary:hover {
+  background-color: var(--colortitre);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+article a {
   text-decoration: none;
   font-family: Ubuntu, sans-serif;
   font-size: 1rem;
@@ -97,70 +200,8 @@ a {
   border-radius: 5px;
   padding: 0 10px;
 }
-code {
-  font-size: 0.8rem;
-  background-color: var(--colortxt);
-  color: whitesmoke;
-}
-button {
-  max-width: 150px;
-  margin: 40px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--colorshadow);
-}
-button i {
-  font-size: 2rem;
-}
-button:hover,
-a:hover {
+
+article a:hover {
   color: var(--colorshadow);
   background-color: var(--colorlink);
-}
-
-/* SECTION en ACCORDEON (FAQ) */
-/* Sert à faire apparaître l'article au clic sur le sommaire */
-.container-summary {
-  margin-top: 10px;
-}
-.faq summary {
-  cursor: pointer;
-  font-family: "Oswald", sans-serif;
-}
-summary:hover {
-  color: var(--colorshadow);
-  background-color: var(--colorlink);
-  border-radius: 5px;
-}
-.faq p,
-.faq ul,
-.faq ol {
-  margin-left: 20px;
-}
-
-/* FLEXBOX */
-/* Sert a répartir équitablement des éléments sur la page */
-.flexbox {
-  display: flex;
-  justify-content: left;
-  padding-top: 5px;
-  gap: 10px;
-}
-
-.flexbox ul {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  background-color: var(--colorshadow);
-  padding: 10px;
-  gap: 5px;
-}
-
-.flexbox li {
-  list-style: none;
-  margin: 10px;
-  font-family: "Oswald", sans-serif;
 }
