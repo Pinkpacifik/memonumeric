@@ -57,7 +57,7 @@
     <!-- CORPS de la PAGE -->
     <main>
         <header>
-            <h1><i class="fa-solid fa-code"></i> Bien démarrer en HTML-CSS</h1>
+            <h1><i class="fa-solid fa-code"></i> Bien démarrer en HTML-CSS-JS</h1>
         </header>
         <section class="container">
             <article>
@@ -72,6 +72,8 @@
                         <li> Material Icon Theme → <em>(place une icone devant les noms de fichier
                                 HTML-CSS-JS...)</em></li>
                         <li>Prettier code formater → <em>(Formate le document après sauvegarde)</em></li>
+                        <li>Javascript code snippets → <em>(Fournit des aides pour coder en JS)</em></li>
+
                     </ol>
                 </details>
                 <details>
@@ -87,7 +89,7 @@
             </article>
 
             <article>
-                <h2>Construire le fichier HTML</h2>
+                <h2>Le fichier HTML</h2>
                 <hr />
                 <details>
                     <summary>
@@ -134,6 +136,11 @@
                             trouverez le lien à copier dans le &#60;head&#62;
                         </li>
                         <li>
+                            <i class="fa-solid fa-image"></i> Hébergement d'images fournissant des liens pour
+                            intégrer les images à des sites web
+                            <a href="https://postimages.org/" target="_blank">Postimages</a>
+                        </li>
+                        <li>
                             <i class="fa-solid fa-clapperboard"></i> Images et Vidéos libres de droit :
                             <a href="https://pixabay.com/videos/" target="_blank">PixaBay</a>
                             -->
@@ -149,7 +156,7 @@
             </article>
 
             <article>
-                <h2>Construire le fichier CSS</h2>
+                <h2>Le fichier CSS</h2>
                 <hr />
                 <details>
                     <summary>
@@ -163,7 +170,7 @@
                         <li>
                             <i class="fa-solid fa-photo-film"></i> Choisir un fond d'écran ou une texture :
                             <a href="https://pixabay.com/fr" target="_blank">Pixabay</a>
-                            - <a href="https://unsplash.com/fr" target="_blank">Unsplash</a> -
+                            - <a href="https://unsplash.com/fr" target="_blank">Unsplash</a>
                             - <a href="https://www.pexels.com/fr-fr/" target="_blank">pexels</a> -
                             Websites for <a href="https://wweb.dev/resources/creative-backgrounds"
                                 target="_blank">Creative
@@ -219,6 +226,72 @@
                                 3D</a>
                             HTML/CSS
                         </li>
+                    </ul>
+                </details>
+            </article>
+
+            <article>
+                <h2>Le fichier JS</h2>
+                <hr />
+                <details>
+                    <summary>
+                        Les Bases
+                    </summary>
+                    <ul>
+                        <li>Déclaration : <br><code>let (variable) const (constante)</code></li>
+                        <li>Concaténation : <br><code>string + "chaîne concaténée"</code></li>
+                        <li>Opérateur : <br><code>++ += (addition) ; -- -= (soustraction) ; *= (multiplication) ; /=
+                            (division) ; ** (puissance)</code></li>
+                        <li>Egalité et opérateur : <br>
+                            <code>== <=>= test sur la valeur ; === test sur la valeur et le type
+                                <br>
+                                || OU ; && ET</code>
+                        </li>
+                        <li>Structure de contrôle : <br>
+                            <code>if (a == b) {console.log("Ils sont égaux !")} <br>
+                            else {console.log("Pas égaux !")}</code>
+                        </li>
+                        <li>Fonction classique : <br>
+                            <code>function faireQuelqueChose() { <br>
+                            console.log("je fais un truc"); <br>
+                            alert("Calcule terminé !");} </code><br>
+                        </li>
+                        <li>Fonction fléchée : <br>
+                            <code>const addition = (a, b) => {console.log(a + b);};<br>
+                            addition(4, 3);</code>
+                        </li>
+
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Le DOM
+                    </summary>
+                    <ul>
+                        <li>Les SELECTEURS (priorité : #id > .class > baliseHTML) <br>
+                            <code>const btn2 = document.getElementById("btn2"); <br>
+                                const btn2 = document.querySelector("#btn2"); <br>
+                            const boxContainer = document.querySelector(".click-event");<br>
+                            const baliseHTML = document.querySelector("h1");</code>
+                        </li>
+                        <li>Injecter du STYLE ou une classe CSS <br>
+                            <code>baliseHTML.style.color = "black";<br>
+                                btn2.classList.add("btn-clicked");</code><br>
+                            Remarque : le <code>.toggle</code> exécute <code>.add</code> ou <code>.remove</code> en fn
+                            de l'existence de la classe.
+                        </li>
+                        <li>Le click EVENT <br>
+                            <code>btn2.addEventListener("click", () => {<br>
+                            response.classList.add("show-response");<br>
+                            response.style.backgroundColor = "red";});</code>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Exemples de composants
+                    </summary>
+                    <ul>
                         <li>
                             Réalisation d'un
                             <a href="https://codepen.io/Pinkpacific/pen/QwKqNxJ" target="_blank">calendrier </a>
@@ -227,6 +300,7 @@
                     </ul>
                 </details>
             </article>
+
         </section>
 
     </main>
