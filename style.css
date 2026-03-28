@@ -73,8 +73,7 @@ hr {
 
 code {
   font-size: 1rem;
-  background-color: var(--colortxt);
-  color: #aaa;
+  background-color: white;
 }
 
 /* 1. Barre de NAVIGATION 

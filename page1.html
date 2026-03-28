@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Link de la bibliothèque Hghligh.js pour la coloration syntaxique -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
 </head>
 
 <body>
@@ -138,7 +139,7 @@
                         <li>
                             <i class="fa-solid fa-image"></i> Hébergement d'images fournissant des liens pour
                             intégrer les images à des sites web
-                            <a href="https://postimages.org/" target="_blank">Postimages</a>
+                            <a href="https://postimg.cc/files" target="_blank">Postimages</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-clapperboard"></i> Images et Vidéos libres de droit :
@@ -148,7 +149,7 @@
                         </li>
                         <li>
                             <i class="fa-brands fa-itunes-note"></i></i> Ajouter de l'audio :
-                            <a href="https://pixabay.com/sound-effects/" target="_blank">Effets sonores</a>
+                            <a href="https://www.soundjay.com/" target="_blank">Effets sonores</a>
                             --> <code>&#60;audio controls src="./audio/ocean-waves.mp3"&#62;&#60;/audio&#62;</code>
                         </li>
                     </ul>
@@ -238,27 +239,23 @@
                         Les Bases
                     </summary>
                     <ul>
-                        <li>Déclaration : <br><code>let (variable) const (constante)</code></li>
-                        <li>Concaténation : <br><code>string + "chaîne concaténée"</code></li>
-                        <li>Opérateur : <br><code>++ += (addition) ; -- -= (soustraction) ; *= (multiplication) ; /=
+                        <li>Déclaration : <code>let (variable) const (constante)</code></li>
+                        <li>Concaténation : <code>string + "chaîne concaténée"</code></li>
+                        <li>Opérateur : <code>++ += (addition) ; -- -= (soustraction) ; *= (multiplication) ; /=
                             (division) ; ** (puissance)</code></li>
-                        <li>Egalité et opérateur : <br>
-                            <code>== <=>= test sur la valeur ; === test sur la valeur et le type
+                        <li>Egalité et opérateur :
+                            <code>== <= >= (test sur la valeur) ; === (test sur la valeur et le type)
                                 <br>
                                 || OU ; && ET</code>
                         </li>
-                        <li>Structure de contrôle : <br>
-                            <code>if (a == b) {console.log("Ils sont égaux !")} <br>
-                            else {console.log("Pas égaux !")}</code>
+                        <li>Structure de contrôle :
+                            <pre><code>if (a == b) {console.log("Ils sont égaux !")} else {console.log("Pas égaux !")}</code></pre>
                         </li>
-                        <li>Fonction classique : <br>
-                            <code>function faireQuelqueChose() { <br>
-                            console.log("je fais un truc"); <br>
-                            alert("Calcule terminé !");} </code><br>
+                        <li>Fonction classique :
+                            <pre><code>function faireQuelqueChose() {console.log("je fais un truc"); alert("Calcule terminé !");} </code></pre>
                         </li>
-                        <li>Fonction fléchée : <br>
-                            <code>const addition = (a, b) => {console.log(a + b);};<br>
-                            addition(4, 3);</code>
+                        <li>Fonction fléchée :
+                            <pre><code>const addition = (a, b) => {console.log(a + b);}; addition(4, 3);</code></pre>
                         </li>
 
                     </ul>
@@ -268,22 +265,22 @@
                         Le DOM
                     </summary>
                     <ul>
-                        <li>Les SELECTEURS (priorité : #id > .class > baliseHTML) <br>
-                            <code>const btn2 = document.getElementById("btn2"); <br>
-                                const btn2 = document.querySelector("#btn2"); <br>
-                            const boxContainer = document.querySelector(".click-event");<br>
-                            const baliseHTML = document.querySelector("h1");</code>
+                        <li>Les SELECTEURS (priorité : #id > .class > baliseHTML)
+                            <pre><code>const btn2 = document.getElementById("btn2");
+const btn2 = document.querySelector("#btn2");
+const boxContainer = document.querySelector(".click-event");
+const baliseHTML = document.querySelector("h1");</code></pre>
                         </li>
-                        <li>Injecter du STYLE ou une classe CSS <br>
-                            <code>baliseHTML.style.color = "black";<br>
-                                btn2.classList.add("btn-clicked");</code><br>
+                        <li>Injecter du STYLE ou une classe CSS
+                            <pre><code>baliseHTML.style.color = "black";
+btn2.classList.add("btn-clicked");</code></pre>
                             Remarque : le <code>.toggle</code> exécute <code>.add</code> ou <code>.remove</code> en fn
                             de l'existence de la classe.
                         </li>
-                        <li>Le click EVENT <br>
-                            <code>btn2.addEventListener("click", () => {<br>
-                            response.classList.add("show-response");<br>
-                            response.style.backgroundColor = "red";});</code>
+                        <li>Le click EVENT
+                            <pre><code>btn2.addEventListener("click", () => {
+response.classList.add("show-response");
+response.style.backgroundColor = "red";});</code></pre>
                         </li>
                     </ul>
                 </details>
@@ -304,6 +301,10 @@
         </section>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
 </body>
 
 </html>
