@@ -83,7 +83,6 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  /* z-index: 2; */
 }
 
 .wrapper {
@@ -109,11 +108,6 @@ nav {
 .nav-bloc i:hover {
   color: var(--colorshadow);
   scale: 1.2;
-}
-
-.nav-brand {
-  position: absolute;
-  bottom: 30px;
 }
 
 .nav-brand {

@@ -292,13 +292,18 @@
                             <pre><code>const btn2 = document.getElementById("btn2");
 const btn2 = document.querySelector("#btn2");
 const boxContainer = document.querySelector(".click-event");
-const baliseHTML = document.querySelector("h1");</code></pre>
+const baliseTitre = document.querySelector("h1");
+const baliseNav = document.querySelector("nav");</code></pre>
                         </li>
                         <li>Injecter du STYLE ou une classe CSS
-                            <pre><code>baliseHTML.style.color = "black";
+                            <pre><code>baliseTitre.style.color = "black";
 btn2.classList.add("btn-clicked");</code></pre>
                             Remarque : le <code>.toggle</code> exécute <code>.add</code> ou <code>.remove</code> en fn
                             de l'existence de la classe.
+                        </li>
+                        <li>Injecter du contenu ; du code HTML (Altgr+7)
+                            <pre><code>baliseTitre.textContent = "Titre de la page";
+baliseNav.innerHTML = `contenu HTML`</code></pre>
                         </li>
                         <li>Le click EVENT
                             <pre><code>btn2.addEventListener("click", () => {
@@ -307,6 +312,22 @@ response.style.backgroundColor = "red";});</code></pre>
                         </li>
                     </ul>
                 </details>
+                <details>
+                    <summary>
+                        La DATA
+                    </summary>
+                    <ul>
+                        <li>Les Tableaux</li>
+                        <li>Les Objets</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        Les DATES
+                    </summary>
+                    <p>Commentaire sur les dates</p>
+                </details>
+
                 <details>
                     <summary>
                         Exemples de composants
